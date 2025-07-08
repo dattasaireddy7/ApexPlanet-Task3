@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Interactive Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Demo</h1>
+  </header>
+
+  <!-- Image Carousel -->
+  <section class="carousel">
+    <img id="carouselImage" src="https://via.placeholder.com/600x300?text=Image+1" alt="Carousel Image" />
+    <div class="carousel-buttons">
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </section>
+
+  <!-- Joke Fetching Section -->
+  <section class="joke-section">
+    <h2>Random Joke Generator</h2>
+    <button onclick="fetchJoke()">Get a Joke</button>
+    <p id="jokeText">Click the button to see a joke!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Interactive Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
